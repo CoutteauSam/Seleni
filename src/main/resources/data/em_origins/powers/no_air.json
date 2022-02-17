@@ -1,9 +1,0 @@
-{
-  "type": "origins:simple",
-  "badges": [
-    {
-      "sprite": "minecraft:textures/item/axolotl_bucket.png",
-      "text": "Positive Effect"
-    }
-  ]
-}
