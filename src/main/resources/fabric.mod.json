@@ -3,16 +3,16 @@
   "id": "seleni",
   "version": "${version}",
   "name": "Seleni",
-  "description": "Adds more origins to the Origins mod",
+  "description": "Library mod which adds more features to the origins mod",
   "authors": [
 	"scouttea"
   ],
   "contact": {
 	"homepage": "",
-	"sources": ""
+	"sources": "https://github.com/CoutteauSam/Seleni"
   },
-  "license": "",
-  "icon": "",
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
   "environment": "*",
   "entrypoints": {
 	"main": [
