@@ -1,0 +1,83 @@
+{
+  "origin.em_origins.equidae.name": "Equidae",
+  "origin.em_origins.equidae.description": "Horses and Donkeys are sturdy creatures, often valued for their speed and carrying capability.",
+
+  "origin.em_origins.vulpes.name": "Vulpes",
+  "origin.em_origins.vulpes.description": "Foxes are small and nimble creatures known for their love of berries.",
+
+  "origin.em_origins.golmi.name": "Golmi",
+  "origin.em_origins.golmi.description": "Golems are often used as guardians. They are slightly more bulky than other creatures.",
+
+  "origin.em_origins.sphagnum.name": "Sphagnum",
+  "origin.em_origins.sphagnum.description": "Creepers are explosive creatures and somehow always behind you.",
+
+  "origin.em_origins.terram_draconis.name": "Terram Draconis",
+  "origin.em_origins.terram_draconis.description": "Now nearly extinct, dragons are a powerful race of flying creatures often associated with the end.",
+
+
+  "power.em_origins.berry_lover.name": "Berry lover",
+  "power.em_origins.berry_lover.description": "You are a massive fan of berries. They fill you more and sting you less.",
+
+  "power.em_origins.big.name": "Big",
+  "power.em_origins.big.description": "You are slightly taller than normal.",
+
+  "power.em_origins.dragon_breath.name": "Dragon Breath",
+  "power.em_origins.dragon_breath.description": "You can launch a dragon fireball, which leaves a caustic area behind on impact.",
+
+  "power.em_origins.dragon_crystal.name": "Crystal Master",
+  "power.em_origins.dragon_crystal.description": "Nearby endercrystals empower you, as long as there isn't a bigger dragon around",
+
+  "power.em_origins.dragon_wings.name": "Dragon Wings",
+  "power.em_origins.dragon_wings.description": "You draconic wings granting you limited aerial mobility.",
+
+  "power.em_origins.explode.name": "Explosive",
+  "power.em_origins.explode.description": "You can explode, dealing significant damage to those around you including yourself. Also spreads potion effects.",
+
+  "power.em_origins.fast_metabolism.name": "Fast Metabolism",
+  "power.em_origins.fast_metabolism.description": "You need to eat more often and potion effects last shorter.",
+
+  "power.em_origins.frail.name": "Frail",
+  "power.em_origins.frail.description": "You have 2 hearts less than normal.",
+
+  "power.em_origins.heavy.name": "Heavy",
+  "power.em_origins.heavy.description": "You are heavy, causing you to sink like a brick and move slower.",
+
+  "power.em_origins.less_hunger.name": "Less Hunger",
+  "power.em_origins.less_hunger.description": "You need to eat less often.",
+
+  "power.em_origins.nimble.name": "Nimble",
+  "power.em_origins.nimble.description": "You take significantly less fall damage",
+
+  "power.em_origins.no_air.name": "Anaerobic",
+  "power.em_origins.no_air.description": "You don't require air to survive.",
+
+  "power.em_origins.no_fall.name": "Good Knees",
+  "power.em_origins.no_fall.description": "You don't take any fall damage.",
+
+  "power.em_origins.no_regen.name": "No health regen",
+  "power.em_origins.no_regen.description": "You can't regenerate health without potions or other means.",
+
+  "power.em_origins.pack_animal.name": "Pack Animal",
+  "power.em_origins.pack_animal.description": "You have increased inventory space.",
+
+  "power.em_origins.pounce.name": "Pounce",
+  "power.em_origins.pounce.description": "You can pounce to attack your enemies.",
+
+  "power.em_origins.small.name": "Small",
+  "power.em_origins.small.description": "You are half your normal size. This allows you to fit into 1 high holes, but you might struggle climbing.",
+
+  "power.em_origins.sneaky.name": "Sneaky",
+  "power.em_origins.sneaky.description": "You can hide from enemies by sneaking, just don't get to close",
+
+  "power.em_origins.strong_arms.name": "Strong Arms",
+  "power.em_origins.strong_arms.description": "Your strong arms have more knockback and deal more unarmed damage",
+
+  "power.em_origins.strong_legs.name": "Strong legs",
+  "power.em_origins.strong_legs.description": "Your strong legs allow you to jump farther and run faster.",
+
+  "power.em_origins.vegetarian.name": "Vegetarian",
+  "power.em_origins.vegetarian.description": "You can't digest any meat.",
+
+  "power.em_origins.weak_arms.name": "Weak Arms",
+  "power.em_origins.weak_arms.description": "Your arms are weak, dealing less melee and arrow damage."
+}

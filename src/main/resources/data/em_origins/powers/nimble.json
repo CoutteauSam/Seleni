@@ -1,0 +1,23 @@
+{
+  "type": "origins:modify_damage_taken",
+  "damage_condition": {
+    "type": "origins:name",
+    "name": "fall"
+  },
+  "modifiers": [
+    {
+      "operation": "addition",
+      "value": -4
+    },
+    {
+      "operation": "multiply_total",
+      "value": -0.5
+    }
+  ],
+  "badges": [
+    {
+      "sprite": "minecraft:textures/item/axolotl_bucket.png",
+      "text": "Positive Effect"
+    }
+  ]
+}

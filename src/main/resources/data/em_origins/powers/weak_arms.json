@@ -1,0 +1,31 @@
+{
+  "type": "origins:modify_damage_dealt",
+  "damage_condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:name",
+        "name": "player"
+      },
+      {
+        "type": "origins:name",
+        "name": "trident"
+      },
+      {
+
+        "type": "origins:name",
+        "name": "arrow"
+      }
+    ]
+  },
+  "modifier": {
+    "operation": "addition",
+    "value": -6
+  },
+  "badges": [
+    {
+      "sprite": "minecraft:textures/item/lava_bucket.png",
+      "text": "Negative Effect"
+    }
+  ]
+}

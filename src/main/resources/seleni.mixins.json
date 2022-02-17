@@ -1,0 +1,26 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "scouttea.seleni.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "DropSkullsMixins$MobEntityMixin",
+
+    "NoAirNeededMixins$LivingEntityMixin",
+
+    "PlayerRendererFeaturesMixins$PlayerEntityRendererMixin",
+
+    "PlayerEndBeamMixins$PlayerEntityRendererMixin",
+    "PlayerEndBeamMixins$PlayerEntityMixin",
+
+    "FasterStatusEffectMixins$StatusEffectInstanceMixin",
+
+    "MobBehaviorMixins$ActiveTargetGoalMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+	"defaultRequire": 1
+  },
+  "refmap": "seleni-refmap.json"
+}

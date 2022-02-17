@@ -1,0 +1,39 @@
+{
+  "type": "origins:multiple",
+  "pounce": {
+    "type": "origins:active_self",
+    "cooldown": 60,
+    "key": { "key": "key.origins.primary_active" },
+    "entity_action": {
+      "type": "origins:delay",
+      "ticks": 2,
+      "action": {
+        "type": "origins:add_velocity",
+        "space": "local_horizontal_normalized",
+        "z": 0.5
+      }
+    }
+  },
+  "pounce2": {
+    "type": "origins:launch",
+    "cooldown": 60,
+    "hud_render": {
+      "bar_index": 3
+    },
+    "sound": "minecraft:entity.parrot.fly",
+    "speed": 1.2,
+    "key": {
+      "key": "key.origins.primary_active"
+    }
+  },
+  "badges": [
+    {
+      "sprite": "origins:textures/gui/badge/active.png",
+      "text": "Active ability"
+    },
+    {
+      "sprite": "minecraft:textures/item/axolotl_bucket.png",
+      "text": "Positive Effect"
+    }
+  ]
+}

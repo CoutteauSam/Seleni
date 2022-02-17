@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:lightning_strike",
+      "conditions": {
+        "player": {
+          "distance": {
+            "absolute": {
+              "min": 0,
+              "max": 2
+            }
+          }
+        }
+      }
+    }
+  }
+}

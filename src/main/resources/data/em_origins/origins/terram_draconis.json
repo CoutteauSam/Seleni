@@ -1,0 +1,12 @@
+{
+  "powers": [
+    "em_origins:dragon_breath",
+    "em_origins:dragon_wings",
+    "em_origins:dragon_crystal",
+    "em_origins:fast_metabolism",
+    "em_origins:no_regen"
+  ],
+  "icon": "minecraft:dragon_egg",
+  "order": 5,
+  "impact": 3
+}

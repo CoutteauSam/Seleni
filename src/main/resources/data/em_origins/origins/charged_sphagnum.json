@@ -1,0 +1,13 @@
+{
+  "powers": [
+    "em_origins:green",
+    "em_origins:charged",
+    "em_origins:explode_charged",
+    "em_origins:less_hunger",
+    "em_origins:sneaky",
+    "em_origins:weak_arms"
+  ],
+  "unchoosable": true,
+  "order": 5,
+  "impact": 3
+}

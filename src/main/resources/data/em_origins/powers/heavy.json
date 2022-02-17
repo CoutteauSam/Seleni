@@ -1,0 +1,20 @@
+{
+  "type": "origins:multiple",
+  "sink": {"type": "origins:ignore_water"},
+  "slow": {
+    "type": "origins:attribute",
+    "modifier": {
+      "name": "speed decrease",
+      "attribute": "minecraft:generic.movement_speed",
+      "value": -0.1,
+      "operation": "multiply_total"
+    }
+  },
+
+  "badges": [
+    {
+      "sprite": "minecraft:textures/item/pufferfish_bucket.png",
+      "text": "Double-Edged Effect"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "type": "origins:elytra_flight",
+  "render_elytra": true,
+  "texture_location": "em_origins:textures/wings/dragon.png",
+  "badges": [
+    {
+      "sprite": "minecraft:textures/item/axolotl_bucket.png",
+      "text": "Positive Effect"
+    }
+  ]
+}

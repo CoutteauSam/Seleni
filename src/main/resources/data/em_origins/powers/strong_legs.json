@@ -1,0 +1,25 @@
+{
+  "type": "origins:multiple",
+  "jump": {
+    "type": "origins:modify_jump",
+    "modifier": {
+      "operation": "addition",
+      "value": 0.1
+    }
+  },
+  "speed": {
+    "type": "origins:attribute",
+    "modifier": {
+      "name": "Max health increase",
+      "attribute": "generic.movement_speed",
+      "value": 0.1,
+      "operation": "multiply_total"
+    }
+  },
+  "badges": [
+    {
+      "sprite": "minecraft:textures/item/axolotl_bucket.png",
+      "text": "Positive Effect"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "origins": [
+	"em_origins:vulpes",
+    "em_origins:equidae",
+    "em_origins:golmi",
+    "em_origins:sphagnum",
+    "em_origins:terram_draconis",
+
+    "em_origins:charged_sphagnum"
+  ]
+}

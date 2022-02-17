@@ -1,0 +1,36 @@
+{
+  "type": "origins:multiple",
+  "damage_immunity": {
+    "type": "origins:invulnerability",
+    "damage_condition": {
+      "type": "origins:name",
+      "name": "sweetBerryBush"
+    }
+  },
+  "more_food": {
+    "type": "origins:modify_food",
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "misc:berries"
+      }
+    },
+    "food_modifier": {
+      "name": "Increased food points",
+      "operation": "addition",
+      "value": 1.0
+    },
+    "saturation_modifier": {
+      "name": "Increased saturation points",
+      "operation": "addition",
+      "value": 0.2
+    },
+    "always_edible": true
+  },
+  "badges": [
+    {
+      "sprite": "minecraft:textures/item/axolotl_bucket.png",
+      "text": "Positive Effect"
+    }
+  ]
+}

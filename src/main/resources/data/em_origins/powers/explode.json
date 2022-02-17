@@ -1,0 +1,48 @@
+{
+  "type": "origins:active_self",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.creeper.primed"
+      },
+      {
+        "type": "origins:delay",
+        "ticks": 14,
+        "action": {
+          "type": "origins:and",
+          "actions": [
+            {
+              "type": "seleni:creeper_boom"
+            },
+            {
+              "type": "seleni:area_effect_from_active_status_effects"
+            },
+            {
+              "type": "origins:damage",
+              "amount": 10,
+              "source": {
+                "name": "explosion"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "cooldown": 100,
+  "hud_render": {
+    "should_render": true
+  },
+  "badges": [
+    {
+      "sprite": "origins:textures/gui/badge/active.png",
+      "text": "Active ability"
+    },
+    {
+      "sprite": "minecraft:textures/item/pufferfish_bucket.png",
+      "text": "Double-Edged Effect"
+    }
+  ]
+}

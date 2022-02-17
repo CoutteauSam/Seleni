@@ -1,0 +1,18 @@
+{
+  "type": "origins:multiple",
+  "potions": {
+    "type": "seleni:faster_potion",
+    "speed": 10
+  },
+  "food": {
+    "type": "origins:exhaust",
+    "interval": 20,
+    "exhaustion": 0.4
+  },
+  "badges": [
+    {
+      "sprite": "minecraft:textures/item/pufferfish_bucket.png",
+      "text": "Double-Edged Effect"
+    }
+  ]
+}

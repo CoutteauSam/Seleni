@@ -1,0 +1,23 @@
+{
+  "type": "origins:fire_projectile",
+  "entity_type": "minecraft:dragon_fireball",
+  "cooldown": 1200,
+  "hud_render": {
+    "should_render": true
+  },
+  "speed": 0.1,
+  "key": {
+    "key": "key.origins.primary_active",
+    "continuous": true
+  },
+  "badges": [
+    {
+      "sprite": "origins:textures/gui/badge/active.png",
+      "text": "Active ability"
+    },
+    {
+      "sprite": "minecraft:textures/item/axolotl_bucket.png",
+      "text": "Positive Effect"
+    }
+  ]
+}

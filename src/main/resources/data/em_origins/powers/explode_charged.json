@@ -1,0 +1,42 @@
+{
+  "type": "origins:active_self",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.creeper.primed"
+      },
+      {
+        "type": "origins:delay",
+        "ticks": 14,
+        "action": {
+          "type": "origins:and",
+          "actions": [
+            {
+              "type": "seleni:creeper_boom",
+              "drop_skulls": true,
+              "radius": 6
+            },
+            {
+              "type": "seleni:area_effect_from_active_status_effects"
+            },
+            {
+              "type": "origins:damage",
+              "amount": 20,
+              "source": {
+                "name": "explosion"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "cooldown": 100,
+  "hud_render": {
+    "should_render": true
+  }
+}
+
+

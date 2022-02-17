@@ -1,0 +1,9 @@
+{
+  "type": "origins:disable_regen",
+  "badges": [
+    {
+      "sprite": "minecraft:textures/item/lava_bucket.png",
+      "text": "Negative Effect"
+    }
+  ]
+}

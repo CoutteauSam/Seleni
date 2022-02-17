@@ -1,0 +1,14 @@
+{
+  "type": "origins:inventory",
+  "drop_on_death": true,
+  "badges": [
+    {
+      "sprite": "origins:textures/gui/badge/active.png",
+      "text": "Active ability"
+    },
+    {
+      "sprite": "minecraft:textures/item/axolotl_bucket.png",
+      "text": "Positive Effect"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "origins:multiple",
+  "size": {
+    "type": "seleni:modify_size",
+    "scale_types": ["origins_revamp:modify_size"],
+    "scale": 1.6
+  },
+  "compensate": {
+    "type": "seleni:modify_size",
+    "scale_types": ["pehkui:held_item"],
+    "scale": 0.625
+  },
+  "reset": {
+    "type": "seleni:modify_size",
+    "scale_types": ["pehkui:falling","pehkui:flight"],
+    "scale": 1
+  },
+  "badges": [
+    {
+      "sprite": "minecraft:textures/item/pufferfish_bucket.png",
+      "text": "Double-Edged Effect"
+    }
+  ]
+}

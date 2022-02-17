@@ -1,0 +1,18 @@
+{
+  "powers": [
+    "em_origins:green",
+    "em_origins:explode",
+    "em_origins:less_hunger",
+    "em_origins:sneaky",
+    "em_origins:weak_arms"
+  ],
+  "icon": "minecraft:gunpowder",
+  "order": 5,
+  "impact": 3,
+  "upgrades": [
+    {
+      "condition": "em_origins:lightning",
+      "origin": "em_origins:charged_sphagnum"
+    }
+  ]
+}

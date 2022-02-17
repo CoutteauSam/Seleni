@@ -1,0 +1,14 @@
+{
+  "type": "origins:modify_exhaustion",
+  "modifier": {
+    "name": "Increased exhaustion",
+    "operation": "multiply_total",
+    "value": -0.25
+  },
+  "badges": [
+    {
+      "sprite": "minecraft:textures/item/axolotl_bucket.png",
+      "text": "Positive Effect"
+    }
+  ]
+}

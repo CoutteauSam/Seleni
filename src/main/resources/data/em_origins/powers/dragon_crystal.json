@@ -1,0 +1,25 @@
+{
+  "type": "seleni:end_crystal",
+  "bientity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:chance",
+        "action": {
+          "type": "origins:target_action",
+          "action": {
+            "type": "origins:heal",
+            "amount": 1
+          }
+        },
+        "chance": 0.025
+      }
+    ]
+  },
+  "badges": [
+    {
+      "sprite": "minecraft:textures/item/axolotl_bucket.png",
+      "text": "Positive Effect"
+    }
+  ]
+}

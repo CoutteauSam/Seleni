@@ -1,0 +1,31 @@
+{
+  "type": "origins:multiple",
+  "size":  {
+    "type": "seleni:modify_size",
+    "scale_types": ["seleni:modify_size","pehkui:step_height"],
+    "scale": 0.5
+  },
+  "compensate_2": {
+    "type": "origins:modify_jump",
+    "modifier": {
+      "operation": "multiply_base",
+      "value": -0.2
+    }
+  },
+  "compensate": {
+    "type": "seleni:modify_size",
+    "scale_types": ["pehkui:held_item"],
+    "scale": 2
+  },
+  "reset": {
+    "type": "seleni:modify_size",
+    "scale_types": ["pehkui:falling","pehkui:flight"],
+    "scale": 1
+  },
+  "badges": [
+    {
+      "sprite": "minecraft:textures/item/pufferfish_bucket.png",
+      "text": "Double-Edged Effect"
+    }
+  ]
+}
