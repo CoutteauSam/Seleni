@@ -12,7 +12,7 @@
 	"sources": "https://github.com/CoutteauSam/Seleni"
   },
   "license": "MIT",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/seleni/icon.png",
   "environment": "*",
   "entrypoints": {
 	"main": [
