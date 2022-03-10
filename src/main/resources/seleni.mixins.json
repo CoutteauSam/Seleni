@@ -8,9 +8,6 @@
 
     "NoAirNeededMixins$LivingEntityMixin",
 
-    "PlayerRendererFeaturesMixins$PlayerEntityRendererMixin",
-
-    "PlayerEndBeamMixins$PlayerEntityRendererMixin",
     "PlayerEndBeamMixins$PlayerEntityMixin",
 
     "FasterStatusEffectMixins$StatusEffectInstanceMixin",
@@ -18,6 +15,9 @@
     "MobBehaviorMixins$ActiveTargetGoalMixin"
   ],
   "client": [
+    "PlayerEndBeamMixins$PlayerEntityRendererMixin",
+
+    "PlayerRendererFeaturesMixins$PlayerEntityRendererMixin"
   ],
   "injectors": {
 	"defaultRequire": 1
