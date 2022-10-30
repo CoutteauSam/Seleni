@@ -13,7 +13,6 @@
   },
   "license": "MIT",
   "icon": "assets/seleni/icon.png",
-  "environment": "*",
   "entrypoints": {
     "main": [
       "scouttea.seleni.common.Seleni"
@@ -23,9 +22,8 @@
     "seleni.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.12.12",
-    "fabric": "*",
     "minecraft": "1.19.x",
+    "fabric": "*",
     "origins": ">=1.6.0",
     "pehkui": ">=3.3.2"
   }
