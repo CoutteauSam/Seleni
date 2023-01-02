@@ -31,7 +31,7 @@ public class OverlayFeatureRenderer extends FeatureRenderer<AbstractClientPlayer
     public void render(MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, AbstractClientPlayerEntity entity, float limbAngle, float limbDistance, float tickDelta, float animationProgress, float headYaw, float headPitch) {
         PowerHolderComponent.getPowers(entity, SkinOverlayPower.class).stream().filter(Power::isActive).forEach(skinOverlayPower -> {
             model.animateModel(entity, limbAngle, limbDistance, tickDelta);
-            this.getContextModel().setAttributes(model);
+            this.getContextModel().copyBipedStateTo(model);
             VertexConsumer vertexConsumer = vertexConsumers.getBuffer(model.getLayer(skinOverlayPower.getTexture()));
             model.setAngles(entity, limbAngle, limbDistance, animationProgress, headYaw, headPitch);
             model.render(matrices, vertexConsumer, light, OverlayTexture.DEFAULT_UV, 0.5F, 0.5F, 0.5F, 1.0F);
