@@ -5,28 +5,26 @@
   "name": "Seleni",
   "description": "Library mod which adds more features to the origins mod",
   "authors": [
-	"scouttea"
+    "scouttea"
   ],
   "contact": {
-	"homepage": "",
-	"sources": "https://github.com/CoutteauSam/Seleni"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/seleni",
+    "sources": "https://github.com/CoutteauSam/Seleni"
   },
   "license": "MIT",
   "icon": "assets/seleni/icon.png",
-  "environment": "*",
   "entrypoints": {
-	"main": [
-	  "scouttea.seleni.common.Seleni"
-	]
+    "main": [
+      "scouttea.seleni.common.Seleni"
+    ]
   },
   "mixins": [
-	"seleni.mixins.json"
+    "seleni.mixins.json"
   ],
   "depends": {
-	"fabricloader": ">=0.12.0",
-	"fabric": "*",
-	"minecraft": "1.18.x",
-	"origins": ">=1.0.0",
-	"pehkui": ">=2.6.0+1.14.4-1.18"
+    "minecraft": "1.19.x",
+    "fabric": "*",
+    "origins": ">=1.6.0",
+    "pehkui": ">=3.3.2"
   }
 }
