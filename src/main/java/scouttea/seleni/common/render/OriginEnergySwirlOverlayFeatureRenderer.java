@@ -14,7 +14,10 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.Identifier;
 
 // Source: net.minecraft.client.render.entity.feature.EnergySwirlOverlayFeatureRenderer
-/** Disclaimer: I don't know how to renderer code */
+
+/**
+ * Disclaimer: I don't know how to renderer code
+ */
 @Environment(EnvType.CLIENT)
 public abstract class OriginEnergySwirlOverlayFeatureRenderer<T extends LivingEntity, M extends BipedEntityModel<T>> extends FeatureRenderer<T, M> {
     public OriginEnergySwirlOverlayFeatureRenderer(FeatureRendererContext<T, M> featureRendererContext) {

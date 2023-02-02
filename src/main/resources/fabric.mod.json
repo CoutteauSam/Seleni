@@ -1,30 +1,30 @@
 {
-  "schemaVersion": 1,
-  "id": "seleni",
-  "version": "${version}",
-  "name": "Seleni",
-  "description": "Library mod which adds more features to the origins mod",
-  "authors": [
-    "scouttea"
-  ],
-  "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/seleni",
-    "sources": "https://github.com/CoutteauSam/Seleni"
-  },
-  "license": "MIT",
-  "icon": "assets/seleni/icon.png",
-  "entrypoints": {
-    "main": [
-      "scouttea.seleni.common.Seleni"
-    ]
-  },
-  "mixins": [
-    "seleni.mixins.json"
-  ],
-  "depends": {
-    "minecraft": "1.19.x",
-    "fabric": "*",
-    "origins": ">=1.6.0",
-    "pehkui": ">=3.3.2"
-  }
+	"schemaVersion":1,
+	"id":"seleni",
+	"version":"${version}",
+	"name":"Seleni",
+	"description":"Library mod which adds more features to the origins mod",
+	"authors":[
+		"scouttea"
+	],
+	"contact":{
+		"homepage":"https://www.curseforge.com/minecraft/mc-mods/seleni",
+		"sources":"https://github.com/CoutteauSam/Seleni"
+	},
+	"license":"MIT",
+	"icon":"assets/seleni/icon.png",
+	"entrypoints":{
+		"main":[
+			"scouttea.seleni.common.Seleni"
+		]
+	},
+	"mixins":[
+		"seleni.mixins.json"
+	],
+	"depends":{
+		"minecraft":"1.19.x",
+		"fabric":"*",
+		"origins":">=1.6.0",
+		"pehkui":">=3.3.2"
+	}
 }

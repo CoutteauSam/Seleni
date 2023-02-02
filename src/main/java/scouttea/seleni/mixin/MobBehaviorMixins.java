@@ -28,10 +28,7 @@ public class MobBehaviorMixins {
 
         @Inject(method = "start", at = @At("HEAD"), cancellable = true)
         public void start(CallbackInfo ci) {
-            if (
-                    PowerHolderComponent.getPowers(targetEntity, ModifyBehaviorPower.class)
-                            .stream().anyMatch(modifyBehaviorPower -> modifyBehaviorPower.apply(this.mob, targetEntity))
-            ) {
+            if (PowerHolderComponent.getPowers(targetEntity, ModifyBehaviorPower.class).stream().anyMatch(modifyBehaviorPower -> modifyBehaviorPower.apply(this.mob, targetEntity))) {
                 this.stop();
                 ci.cancel();
             }
