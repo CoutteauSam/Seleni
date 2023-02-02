@@ -1,14 +1,14 @@
 {
-  "replace": false,
-  "origins": [
-    {
-      "condition": {
-        "type": "origins:gamemode",
-        "gamemode": "creative"
-      },
-      "origins": [
-        "seleni:debug"
-      ]
-    }
-  ]
+	"replace":false,
+	"origins":[
+		{
+			"condition":{
+				"type":"origins:gamemode",
+				"gamemode":"creative"
+			},
+			"origins":[
+				"seleni:debug"
+			]
+		}
+	]
 }

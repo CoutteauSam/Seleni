@@ -7,14 +7,12 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import java.util.Collection;
 
 // Source: net.minecraft.entity.mob.CreeperEntity
-/** Spawns an area effect cloud with the same effects as @param(entity) */
+
+/**
+ * Spawns an area effect cloud with the same effects as @param(entity)
+ */
 public class AreaEffectFromActiveStatusEffects {
-    public static void spawnEffectsCloud(
-            LivingEntity entity,
-            boolean remove_own_effects,
-            float radius,
-            float radius_on_use
-    ) {
+    public static void spawnEffectsCloud(LivingEntity entity, boolean remove_own_effects, float radius, float radius_on_use) {
         Collection<StatusEffectInstance> collection = entity.getStatusEffects();
         if (!collection.isEmpty()) {
             AreaEffectCloudEntity areaEffectCloudEntity = new AreaEffectCloudEntity(entity.world, entity.getX(), entity.getY(), entity.getZ());

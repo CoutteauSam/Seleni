@@ -13,7 +13,10 @@ import java.util.List;
 import java.util.Set;
 
 // Source: https://github.com/MoriyaShiine/extra-origins/blob/master/src/main/java/moriyashiine/extraorigins/common/power/ModifySizePower.java
-/** Main power for interaction with the Pehkui mod */
+
+/**
+ * Main power for interaction with the Pehkui mod
+ */
 public class ModifySizePower extends Power {
     public final float scale;
     private final Set<ScaleType> scaleTypes = new HashSet<>();

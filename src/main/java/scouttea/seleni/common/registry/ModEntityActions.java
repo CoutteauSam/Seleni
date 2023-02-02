@@ -8,7 +8,7 @@ import io.github.apace100.calio.data.SerializableDataTypes;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.registry.Registry;
-import net.minecraft.world.explosion.Explosion;
+import net.minecraft.world.World;
 import scouttea.seleni.common.Seleni;
 import scouttea.seleni.common.actions.AreaEffectFromActiveStatusEffects;
 import scouttea.seleni.common.actions.Explode;
@@ -22,7 +22,7 @@ public class ModEntityActions {
                     .add("radius", SerializableDataTypes.FLOAT, 3.0F)
                     .add("drop_skulls", SerializableDataTypes.BOOLEAN, false)
                     .add("create_fire", SerializableDataTypes.BOOLEAN, false)
-                    .add("destruction_type", SerializableDataType.enumValue(Explosion.DestructionType.class), Explosion.DestructionType.KEEP),
+                    .add("destruction_type", SerializableDataType.enumValue(World.ExplosionSourceType.class), World.ExplosionSourceType.NONE),
             (data, entity) -> Explode.explode(
                     (LivingEntity) entity,
                     data.getFloat("radius"),

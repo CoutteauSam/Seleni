@@ -19,7 +19,7 @@ public class FasterStatusEffectMixins {
         @Shadow
         private StatusEffectInstance hiddenEffect;
         @Shadow
-        private int duration;
+        int duration;
 
         private LivingEntity last_user;
 
@@ -50,12 +50,9 @@ public class FasterStatusEffectMixins {
                 ((StatusEffectInstanceMixin) (Object) this.hiddenEffect).updateDuration();
             }
 
-            int tickspeed = PowerHolderComponent.getPowers(this.last_user, FasterPotionPower.class).stream()
-                    .filter(Power::isActive)
-                    .map(FasterPotionPower::getSpeed)
-                    .reduce(1, Math::max);
+            int tickSpeed = PowerHolderComponent.getPowers(this.last_user, FasterPotionPower.class).stream().filter(Power::isActive).map(FasterPotionPower::getSpeed).reduce(1, Math::max);
 
-            this.duration -= tickspeed;
+            this.duration -= tickSpeed;
             cir.setReturnValue(this.duration);
         }
 
