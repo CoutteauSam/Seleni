@@ -24,7 +24,7 @@
 	"depends":{
 		"minecraft":"1.19.x",
 		"fabric":"*",
-		"origins":">=1.6.0",
-		"pehkui":">=3.3.2"
+		"origins":"*",
+		"pehkui":"*"
 	}
 }
