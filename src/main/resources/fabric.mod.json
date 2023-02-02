@@ -22,7 +22,7 @@
 		"seleni.mixins.json"
 	],
 	"depends":{
-		"minecraft":"1.19.x",
+		"minecraft":">=1.19.0 <=1.19.2",
 		"fabric":"*",
 		"origins":"*",
 		"pehkui":"*"

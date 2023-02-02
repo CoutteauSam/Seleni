@@ -8,7 +8,7 @@ import io.github.apace100.apoli.power.factory.PowerFactory;
 import io.github.apace100.apoli.registry.ApoliRegistries;
 import io.github.apace100.calio.data.SerializableData;
 import io.github.apace100.calio.data.SerializableDataTypes;
-import net.minecraft.registry.Registry;
+import net.minecraft.util.registry.Registry;
 import scouttea.seleni.common.Seleni;
 import scouttea.seleni.common.powers.*;
 import virtuoel.pehkui.api.ScaleRegistries;
