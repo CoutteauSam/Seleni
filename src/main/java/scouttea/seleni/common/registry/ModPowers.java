@@ -2,8 +2,6 @@ package scouttea.seleni.common.registry;
 
 import io.github.apace100.apoli.data.ApoliDataTypes;
 import io.github.apace100.apoli.power.Power;
-import io.github.apace100.apoli.power.PowerType;
-import io.github.apace100.apoli.power.PowerTypeReference;
 import io.github.apace100.apoli.power.factory.PowerFactory;
 import io.github.apace100.apoli.registry.ApoliRegistries;
 import io.github.apace100.calio.data.SerializableData;
@@ -17,8 +15,7 @@ import java.util.Collections;
 
 public class ModPowers {
 
-    //TODO: Proper power
-    public static final PowerType<?> NO_AIR = new PowerTypeReference<>(Seleni.identifier("no_air"));
+    public static final PowerFactory<Power> NO_AIR = new PowerFactory<>(Seleni.identifier("no_air"), new SerializableData(), data -> NoAirPower::new).allowCondition();
 
     public static final PowerFactory<Power> MODIFY_SIZE = new PowerFactory<>(Seleni.identifier("modify_size"), new SerializableData()
             .add("scale_types", SerializableDataTypes.IDENTIFIERS, Collections.singletonList(ScaleRegistries.getId(ScaleRegistries.SCALE_TYPES, ModScaleTypes.MODIFY_SIZE_TYPE)))
@@ -39,6 +36,7 @@ public class ModPowers {
             .add("speed", SerializableDataTypes.INT, 1), data -> (type, entity) -> new FasterPotionPower(type, entity, data.getInt("speed"))).allowCondition();
 
     public static void init() {
+        Registry.register(ApoliRegistries.POWER_FACTORY, NO_AIR.getSerializerId(), NO_AIR);
         Registry.register(ApoliRegistries.POWER_FACTORY, MODIFY_SIZE.getSerializerId(), MODIFY_SIZE);
         Registry.register(ApoliRegistries.POWER_FACTORY, CHARGED.getSerializerId(), CHARGED);
         Registry.register(ApoliRegistries.POWER_FACTORY, MODIFY_BEHAVIOR.getSerializerId(), MODIFY_BEHAVIOR);
