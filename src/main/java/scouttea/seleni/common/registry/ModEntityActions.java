@@ -13,9 +13,7 @@ import scouttea.seleni.common.Seleni;
 import scouttea.seleni.common.actions.AreaEffectFromActiveStatusEffects;
 import scouttea.seleni.common.actions.Explode;
 
-
 public class ModEntityActions {
-
     public static final ActionFactory<Entity> CREEPER_BOOM = new ActionFactory<>(
             Seleni.identifier("creeper_boom"),
             new SerializableData()

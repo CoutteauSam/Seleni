@@ -4,9 +4,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.damage.EntityDamageSource;
 
 /**
- * Custom damage source
- * to allow detection of charged creeper boom
- * to enable skull drops for example
+ * Custom damage source to allow detection of charged creeper boom (to enable skull drops, for example)
  */
 public class OriginExplosionDamageSource extends EntityDamageSource {
 

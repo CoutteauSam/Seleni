@@ -15,17 +15,12 @@ public class FasterStatusEffectMixins {
 
     @Mixin(StatusEffectInstance.class)
     public static abstract class StatusEffectInstanceMixin implements Comparable<StatusEffectInstance> {
-
         @Shadow
         private StatusEffectInstance hiddenEffect;
         @Shadow
         int duration;
 
         private LivingEntity last_user;
-
-        public LivingEntity get_last_user() {
-            return last_user;
-        }
 
         public void set_last_user(LivingEntity last_user) {
             if (this.hiddenEffect != null) {
@@ -55,7 +50,5 @@ public class FasterStatusEffectMixins {
             this.duration -= tickSpeed;
             cir.setReturnValue(this.duration);
         }
-
     }
-
 }
