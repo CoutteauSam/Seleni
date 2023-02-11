@@ -22,8 +22,8 @@
 		"seleni.mixins.json"
 	],
 	"depends":{
-		"minecraft":"1.19.x",
-		"fabric":"*",
+		"minecraft":">=1.19.3",
+		"fabric-api":"*",
 		"origins":"*",
 		"pehkui":"*"
 	}
