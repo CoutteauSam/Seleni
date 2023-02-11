@@ -5,10 +5,11 @@ import io.github.apace100.apoli.power.PowerType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.Identifier;
 
+// Disclaimer: This power isn't implemented in the best way
+
 /**
  * Power which allows for rendering of additional skin elements
  */
-/* Disclaimer: This power isn't implemented in the best way */
 public class SkinOverlayPower extends Power {
     private final Identifier texture;
 

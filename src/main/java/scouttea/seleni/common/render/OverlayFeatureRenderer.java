@@ -16,7 +16,9 @@ import net.minecraft.client.render.entity.model.PlayerEntityModel;
 import net.minecraft.client.util.math.MatrixStack;
 import scouttea.seleni.common.powers.SkinOverlayPower;
 
-/* Disclaimer: I don't know how to renderer code */
+/**
+ * Disclaimer: I don't know how to renderer code
+ */
 @Environment(EnvType.CLIENT)
 public class OverlayFeatureRenderer extends FeatureRenderer<AbstractClientPlayerEntity, PlayerEntityModel<AbstractClientPlayerEntity>> {
     public final PlayerEntityModel<AbstractClientPlayerEntity> model;

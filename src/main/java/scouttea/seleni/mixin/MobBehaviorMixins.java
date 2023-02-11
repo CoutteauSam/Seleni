@@ -12,8 +12,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import scouttea.seleni.common.powers.ModifyBehaviorPower;
 
-//Source (modified) :
-// https://github.com/Latokike/lato-origins/blob/1.18.x/src/main/java/latokike/latoorigins/mixin/ActiveTargetGoalMixin.java
+//Source (modified): https://github.com/Latokike/lato-origins/blob/1.18.x/src/main/java/latokike/latoorigins/mixin/ActiveTargetGoalMixin.java
 
 public class MobBehaviorMixins {
     @Mixin(ActiveTargetGoal.class)

@@ -22,6 +22,6 @@ public class Seleni implements ModInitializer {
         ModPowers.init();
         ModEntityActions.init();
 
-        LOGGER.info("Seleni is initialized.");
+        LOGGER.info("Seleni has initialized.");
     }
 }

@@ -12,9 +12,9 @@ import scouttea.seleni.common.powers.NoAirPower;
 
 import static io.github.apace100.apoli.component.PowerHolderComponent.hasPower;
 
-public class NoAirNeededMixins {
+//Source: https://github.com/apace100/origins-fabric/blob/1.17/src/main/java/io/github/apace100/origins/mixin/WaterBreathingMixin.java
 
-    //Source: https://github.com/apace100/origins-fabric/blob/1.17/src/main/java/io/github/apace100/origins/mixin/WaterBreathingMixin.java
+public class NoAirNeededMixins {
     @Mixin(LivingEntity.class)
     public abstract static class LivingEntityMixin extends Entity {
 
@@ -24,7 +24,7 @@ public class NoAirNeededMixins {
 
         @Inject(method = "canBreatheInWater", at = @At("HEAD"), cancellable = true)
         public void doWaterBreathing(CallbackInfoReturnable<Boolean> info) {
-            if(hasPower(this, NoAirPower.class)){
+            if (hasPower(this, NoAirPower.class)) {
                 info.setReturnValue(true);
             }
         }

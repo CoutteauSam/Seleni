@@ -13,7 +13,10 @@ import net.minecraft.util.Identifier;
 import scouttea.seleni.common.powers.ChargedPower;
 
 // Source: net.minecraft.client.render.entity.feature.CreeperChargeFeatureRenderer
-/* Disclaimer: I don't know how to renderer code */
+
+/**
+ * Disclaimer: I don't know how to renderer code
+ */
 @Environment(EnvType.CLIENT)
 public class ChargedFeatureRenderer extends OriginEnergySwirlOverlayFeatureRenderer<AbstractClientPlayerEntity, PlayerEntityModel<AbstractClientPlayerEntity>> {
     private static final Identifier SKIN = new Identifier("textures/entity/creeper/creeper_armor.png");
