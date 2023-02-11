@@ -30,7 +30,6 @@ public abstract class OriginEnergySwirlOverlayFeatureRenderer<T extends LivingEn
             BipedEntityModel<T> entityModel = this.getEnergySwirlModel();
 
             entityModel.animateModel(entity, limbAngle, limbDistance, tickDelta);
-            //this.getContextModel().copyStateTo(entityModel);
             this.getContextModel().setAttributes(entityModel);
             VertexConsumer vertexConsumer = vertexConsumers.getBuffer(RenderLayer.getEnergySwirl(this.getEnergySwirlTexture(), this.getEnergySwirlX(f), f * 0.01F));
             entityModel.setAngles(entity, limbAngle, limbDistance, animationProgress, headYaw, headPitch);

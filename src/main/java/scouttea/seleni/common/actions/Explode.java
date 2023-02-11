@@ -7,6 +7,7 @@ import scouttea.seleni.common.Strings;
 import scouttea.seleni.common.damage_sources.OriginExplosionDamageSource;
 
 // Source: net.minecraft.entity.mob.CreeperEntity
+
 public class Explode {
     public static void explode(LivingEntity entity, float radius, boolean skull, boolean create_fire, Explosion.DestructionType destructionType) {
         if (entity.world.isClient()) return;

@@ -7,8 +7,6 @@ import virtuoel.pehkui.api.*;
 import java.util.Map;
 
 public class ModScaleTypes {
-    public static final ScaleModifier MODIFY_SIZE_MODIFIER = register(ScaleRegistries.SCALE_MODIFIERS, new TypedScaleModifier(() -> ModScaleTypes.MODIFY_SIZE_TYPE));
-    public static final ScaleType MODIFY_SIZE_TYPE = register(ScaleRegistries.SCALE_TYPES, ScaleType.Builder.create().addDependentModifier(MODIFY_SIZE_MODIFIER).affectsDimensions().build());
     private static final ScaleType[] MODIFY_SIZE_TYPES = {ScaleTypes.WIDTH, ScaleTypes.HEIGHT, ScaleTypes.VISIBILITY};
 
     private static <T> T register(Map<Identifier, T> registry, T entry) {
@@ -20,4 +18,8 @@ public class ModScaleTypes {
             type.getDefaultBaseValueModifiers().add(MODIFY_SIZE_MODIFIER);
         }
     }
+
+    public static final ScaleModifier MODIFY_SIZE_MODIFIER = register(ScaleRegistries.SCALE_MODIFIERS, new TypedScaleModifier(() -> ModScaleTypes.MODIFY_SIZE_TYPE));
+
+    public static final ScaleType MODIFY_SIZE_TYPE = register(ScaleRegistries.SCALE_TYPES, ScaleType.Builder.create().addDependentModifier(MODIFY_SIZE_MODIFIER).affectsDimensions().build());
 }
