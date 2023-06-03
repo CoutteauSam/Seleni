@@ -1,17 +1,17 @@
 {
 	"schemaVersion":1,
 	"id":"seleni",
-	"version":"${version}",
 	"name":"Seleni",
+	"version":"${version}",
 	"description":"Library mod which adds more features to the origins mod",
+	"license":"MIT",
 	"authors":[
 		"scouttea"
 	],
 	"contact":{
 		"homepage":"https://www.curseforge.com/minecraft/mc-mods/seleni",
-		"sources":"https://github.com/CoutteauSam/Seleni"
+		"sources":"https://github.com/CoutteauSam/Seleni/issues"
 	},
-	"license":"MIT",
 	"icon":"assets/seleni/icon.png",
 	"entrypoints":{
 		"main":[
