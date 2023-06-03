@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.1-SNAPSHOT'
+    id 'fabric-loom' version '1.2-SNAPSHOT'
 }
 
 version = "${project.mod_version}+${project.minecraft_version}"
@@ -18,10 +18,9 @@ dependencies {
     modImplementation("net.fabricmc.fabric-api:fabric-api:${project.fabric_version}+${project.minecraft_version}")
     modImplementation("com.github.apace100:origins-fabric:${project.origins_version}")
     modImplementation("com.github.virtuoel:pehkui:${project.pehkui_version}")
-    modImplementation("com.github.apace100:apoli:${project.apoli_version}")
-    modImplementation("com.github.apace100:calio:${project.calio_version}")
-    modImplementation("com.github.DaFuqs:AdditionalEntityAttributes:${project.aea_version}")
-    modImplementation("dev.onyxstudios.cardinal-components-api:cardinal-components-base:${project.cca_version}")
+    modApi("com.github.apace100:apoli:${project.apoli_version}")
+    modApi("com.github.apace100:calio:${project.calio_version}")
+    modApi("dev.onyxstudios.cardinal-components-api:cardinal-components-base:${project.cca_version}")
 }
 
 processResources {
