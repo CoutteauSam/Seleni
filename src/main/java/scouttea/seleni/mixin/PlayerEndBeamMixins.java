@@ -98,7 +98,7 @@ public class PlayerEndBeamMixins {
             }
 
             //Don't use crystals if enderdragon is nearby
-            if (!this.world.getNonSpectatingEntities(EnderDragonEntity.class, this.getBoundingBox().expand(128.0D)).isEmpty()) {
+            if (!this.getWorld().getNonSpectatingEntities(EnderDragonEntity.class, this.getBoundingBox().expand(128.0D)).isEmpty()) {
                 return;
             }
 
@@ -109,7 +109,7 @@ public class PlayerEndBeamMixins {
             }
 
             if (this.random.nextInt(10) == 0) {
-                List<EndCrystalEntity> list = this.world.getNonSpectatingEntities(EndCrystalEntity.class, this.getBoundingBox().expand(32.0D));
+                List<EndCrystalEntity> list = this.getWorld().getNonSpectatingEntities(EndCrystalEntity.class, this.getBoundingBox().expand(32.0D));
 
                 EndCrystalEntity endCrystalEntity = null;
                 double d = 1.7976931348623157E308D;

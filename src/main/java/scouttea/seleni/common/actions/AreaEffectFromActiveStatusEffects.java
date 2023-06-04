@@ -15,7 +15,7 @@ public class AreaEffectFromActiveStatusEffects {
     public static void spawnEffectsCloud(LivingEntity entity, boolean remove_own_effects, float radius, float radius_on_use) {
         Collection<StatusEffectInstance> collection = entity.getStatusEffects();
         if (!collection.isEmpty()) {
-            AreaEffectCloudEntity areaEffectCloudEntity = new AreaEffectCloudEntity(entity.world, entity.getX(), entity.getY(), entity.getZ());
+            AreaEffectCloudEntity areaEffectCloudEntity = new AreaEffectCloudEntity(entity.getWorld(), entity.getX(), entity.getY(), entity.getZ());
             areaEffectCloudEntity.setRadius(radius);
             areaEffectCloudEntity.setRadiusOnUse(radius_on_use);
             areaEffectCloudEntity.setWaitTime(10);
@@ -26,7 +26,7 @@ public class AreaEffectFromActiveStatusEffects {
                 areaEffectCloudEntity.addEffect(new StatusEffectInstance(statusEffectInstance.getEffectType()));
             }
 
-            entity.world.spawnEntity(areaEffectCloudEntity);
+            entity.getWorld().spawnEntity(areaEffectCloudEntity);
             if (remove_own_effects) {
                 entity.clearStatusEffects();
             }

@@ -32,7 +32,7 @@ public class DropSkullsMixins {
 
         @Inject(method = "dropEquipment", at = @At("RETURN"))
         protected void dropEquipment(DamageSource source, int lootingMultiplier, boolean allowDrops, CallbackInfo ci) {
-            if (this.shouldDropLoot() && this.world.getGameRules().getBoolean(GameRules.DO_MOB_LOOT) && source instanceof OriginExplosionDamageSource && ((OriginExplosionDamageSource) source).isCharged()) {
+            if (this.shouldDropLoot() && this.getWorld().getGameRules().getBoolean(GameRules.DO_MOB_LOOT) && source instanceof OriginExplosionDamageSource && ((OriginExplosionDamageSource) source).isCharged()) {
                 Class<? extends LivingEntity> aClass = this.getClass();
                 if (SkullMap.containsKey(aClass)) {
                     this.dropItem(SkullMap.get(aClass));
