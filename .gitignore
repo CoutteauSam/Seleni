@@ -1,27 +1,21 @@
-# eclipse
-bin
+# Eclipse
 *.launch
-.settings
-.metadata
-.classpath
-.project
 
-# idea
-out
-*.ipr
-*.iws
-*.iml
-.idea
-
-# gradle
-build
+# Gradle
 .gradle
-
-# other
-eclipse
+build
+out
 run
 
-*.un~
-libs
+# IntelliJ
+.idea
 
-Output/*
+# macOS
+*.DS_Store
+
+# VSCode
+.classpath
+.project
+.settings/
+.vscode/
+bin/
