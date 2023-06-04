@@ -3,7 +3,7 @@
 	"id":"seleni",
 	"version":"${version}",
 	"name":"Seleni",
-	"description":"Library mod which adds more features to the origins mod",
+	"description":"Library mod which adds more features to the origins mod.",
 	"authors":[
 		"scouttea"
 	],
