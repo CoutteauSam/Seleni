@@ -6,7 +6,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import scouttea.seleni.common.registry.ModEntityActions;
 import scouttea.seleni.common.registry.ModPowers;
-import scouttea.seleni.common.registry.ModScaleTypes;
 
 public class Seleni implements ModInitializer {
     public static final String MODID = "seleni";
@@ -18,7 +17,6 @@ public class Seleni implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        ModScaleTypes.init();
         ModPowers.init();
         ModEntityActions.init();
 
