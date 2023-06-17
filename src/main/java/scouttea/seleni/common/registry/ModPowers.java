@@ -9,9 +9,6 @@ import io.github.apace100.calio.data.SerializableDataTypes;
 import net.minecraft.registry.Registry;
 import scouttea.seleni.common.Seleni;
 import scouttea.seleni.common.powers.*;
-import virtuoel.pehkui.api.ScaleRegistries;
-
-import java.util.Collections;
 
 public class ModPowers {
     public static final PowerFactory<Power> CHARGED = new PowerFactory<>(Seleni.identifier("charged"), new SerializableData(), data -> ChargedPower::new).allowCondition();
