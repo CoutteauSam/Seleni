@@ -9,7 +9,7 @@
 	],
 	"contact":{
 		"homepage":"https://www.curseforge.com/minecraft/mc-mods/seleni",
-		"sources":"https://github.com/CoutteauSam/Seleni"
+		"issues":"https://github.com/CoutteauSam/Seleni/issues"
 	},
 	"license":"MIT",
 	"icon":"assets/seleni/icon.png",
