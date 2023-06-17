@@ -25,10 +25,6 @@ public class ModPowers {
     public static final PowerFactory<Power> MODIFY_BEHAVIOR = new PowerFactory<>(Seleni.identifier("modify_behavior"), new SerializableData()
             .add("bientity_condition", ApoliDataTypes.BIENTITY_CONDITION, null), data -> (type, entity) -> new ModifyBehaviorPower(type, entity, data.get("bientity_condition"))).allowCondition();
 
-    public static final PowerFactory<Power> MODIFY_SIZE = new PowerFactory<>(Seleni.identifier("modify_size"), new SerializableData()
-            .add("scale_types", SerializableDataTypes.IDENTIFIERS, Collections.singletonList(ScaleRegistries.getId(ScaleRegistries.SCALE_TYPES, ModScaleTypes.MODIFY_SIZE_TYPE)))
-            .add("scale", SerializableDataTypes.FLOAT), data -> (type, entity) -> new ModifySizePower(type, entity, data.get("scale_types"), data.getFloat("scale"))).allowCondition();
-
     public static final PowerFactory<Power> NO_AIR = new PowerFactory<>(Seleni.identifier("no_air"), new SerializableData(), data -> NoAirPower::new).allowCondition();
 
     public static final PowerFactory<Power> SKIN_OVERLAY_POWER = new PowerFactory<>(Seleni.identifier("skin_overlay"), new SerializableData()
@@ -39,7 +35,6 @@ public class ModPowers {
         Registry.register(ApoliRegistries.POWER_FACTORY, END_CRYSTAL_POWER.getSerializerId(), END_CRYSTAL_POWER);
         Registry.register(ApoliRegistries.POWER_FACTORY, FASTER_POTION_POWER.getSerializerId(), FASTER_POTION_POWER);
         Registry.register(ApoliRegistries.POWER_FACTORY, MODIFY_BEHAVIOR.getSerializerId(), MODIFY_BEHAVIOR);
-        Registry.register(ApoliRegistries.POWER_FACTORY, MODIFY_SIZE.getSerializerId(), MODIFY_SIZE);
         Registry.register(ApoliRegistries.POWER_FACTORY, NO_AIR.getSerializerId(), NO_AIR);
         Registry.register(ApoliRegistries.POWER_FACTORY, SKIN_OVERLAY_POWER.getSerializerId(), SKIN_OVERLAY_POWER);
     }
