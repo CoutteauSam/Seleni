@@ -24,7 +24,6 @@
 	"depends":{
 		"minecraft":">=1.20.0",
 		"fabric-api":"*",
-		"origins":"*",
-		"pehkui":"*"
+		"origins":"*"
 	}
 }
