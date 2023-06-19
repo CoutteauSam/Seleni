@@ -16,7 +16,7 @@ public class FasterStatusEffectMixins {
     @Mixin(StatusEffectInstance.class)
     public static abstract class StatusEffectInstanceMixin implements Comparable<StatusEffectInstance> {
         @Shadow
-        int duration;
+        private int duration;
         @Shadow
         private StatusEffectInstance hiddenEffect;
         private LivingEntity last_user;
