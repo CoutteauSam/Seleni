@@ -9,7 +9,7 @@ import scouttea.seleni.common.registry.ModPowers;
 
 public class Seleni implements ModInitializer {
     public static Identifier identifier(String path) {
-        return new Identifier("Seleni", path);
+        return new Identifier("seleni", path);
     }
 
     @Override
